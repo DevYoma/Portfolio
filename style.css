@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100vw;
+}
+
+section{
+    height: 50vh;
+    
+}
+
+/* Nav Section */
+.social__nav{
+    position: fixed;
+    top: 50%;
+    left: -3rem;
+    transform: translateY(-50%);
+    z-index: 999;
+    transition: left .5s;
+}
+
+.social__nav.active{
+    left: 0;
+}
+
+
+
+.social__nav > a {
+    color: lightblue;
+}
+
+.social__nav__toggler{
+    position: absolute;
+    cursor: pointer;
+    background: #3b5998;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 3rem;
+    height: 3rem;
+    top: 0;
+    right: -3rem;
+    color: #fff ;
+    justify-content: center;
+}
+
+
+.icon__link{
+    display:flex;
+    width: 3rem;
+    height: 3rem;
+    /* background: red; */
+    text-decoration: none;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    transition: background .5s;
+}
+
+
+
+.icon__link.facebook{
+    background: #3b5998;
+}
+
+.icon__link.twitter{
+    background: #1da1f2;
+}
+
+.icon__link.email{
+    background: #dd4b39;
+}
+
+.icon__link.linkedin{
+    background: #0077b5;
+}
+
+.icon__link.instagram{
+    background: hotpink;
+}
+
+.icon__link.github{
+    background: #464d52;
+}
+
+.icon__link:hover{
+    background: #151515;
+}
+
+
+
+/* Home Section */
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(40, 75, 112);
+    /* border: 2px solid red; */
+}
+
+.home__info{
+    /* border: 2px solid gold; */
+    margin-right: 25px;
+    padding: 0 15px; 
+}
+
+.home__info > h3 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.home__info > h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.home__info > h1 > span {
+    color: lightblue;
+}
+
+.home__info > p{
+    color: lightgray;
+}
+
+.profile__photo > img{
+    height: 200px;
+    object-fit: contain;
+    /* border: 2px solid red; */
+}
+
+
+/* About Section */
+
+.about{
+    margin-bottom: 5vh;
+    background: white;
+    z-index: 2;
+}
+
+.about__info{
+    /* background: red; */
+    height: 20vh;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.about__info > h2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.about__info > p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about__techstack{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.about__techstack__svg > h2 {
+    font-size: 600;
+}
+
+
+.about__skills{
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    text-align: center;
+    padding: 10px;
+}
+
+
+#react{
+    /* background: black; */
+    color: lightblue;
+}
+
+#js{
+    color: orange;
+}
+
+#html{
+    color: red;
+}
+
+#css{
+    color: skyblue;
+}
+
+#sass{
+    color: hotpink;
+}
+
+#github{
+    color: black;
+}
+
+/* Projects section */
+.projects{
+    height: fit-content;
+    background: rgb(40, 75, 112);
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.projects > h1 {
+    text-align: center;
+    font-size: 600;
+    color: lightblue;
+}
+
+.project{
+    width: 70%;
+    border: 1px solid lightblue;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.project__image > img{
+    max-width: 300px;
+    object-fit: contain;
+}
+
+.project__info{
+    background: rgb(51, 46, 46);
+    padding: 10px;
+    flex: 1;
+}
+
+.project__info * {
+    color: white;
+    text-align: center;
+}
+
+.project__links{
+    width: 90%;
+    /* background: black; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-eye, .fa-github{
+    cursor: pointer;
+}
+
+
+
+.project__info > h2{
+    color: lightblue;
+}
+
+.project__info > li {
+    color: white;
+}
+
+/* Contact me */
+.contact{
+    display: grid;
+    place-items: center;
+    place-content: center;
+    background: white;
+    padding: 0 20px;
+}
+
+.contact > h3 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 425px ){
+  
+    /* body{
+        max-width: 425px;
+    } */
+
+    section{
+        height: fit-content;
+    }
+
+    .home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background: rgb(40, 75, 112);
+    }
+
+    .home__info{
+        text-align: center;
+        /* order: 1; */
+        margin: 0 auto;
+    }
+
+    .profile__photo{
+        margin-top: 10px;
+    }
+
+    
+    .about__info{
+        /* background: red; */
+        height: fit-content;
+        text-align: center;
+        padding: 20px 20px;
+        margin: 0 auto;
+    }
+
+    .about__techstack{
+        flex-direction: column;
+    }
+
+
+    .project{
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .contact{
+        /* padding: 20px 0; */
+        height: 50vh;
+    }
+
+}
