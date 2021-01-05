@@ -133,8 +133,8 @@ section{
 
 .profile__photo > img{
     height: 200px;
-    object-fit: contain;
-    /* border: 2px solid red; */
+    width: 200px;
+    border-radius: 50%;
 }
 
 
@@ -230,6 +230,8 @@ section{
     margin: 20px auto;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
 }
 
 
@@ -251,7 +253,7 @@ section{
 }
 
 .project__links{
-    width: 90%;
+    width: 50%;
     /* background: black; */
     margin: 0 auto;
     display: flex;
