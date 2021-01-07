@@ -6,6 +6,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@1,500&display=swap');
+
 body{
     width: 100vw;
     overflow-x: hidden;
@@ -311,7 +313,7 @@ section{
 
 .blockquote__text{
     /* gelacio */
-    font-family: cursive;
+    font-family: 'Gelasio', sans-serif;
     font-size: 1.15em;
     font-style: italic;
     line-height: 1.5;
