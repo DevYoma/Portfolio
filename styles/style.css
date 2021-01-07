@@ -8,6 +8,7 @@
 
 body{
     width: 100vw;
+    overflow-x: hidden;
 }
 
 section{
@@ -150,10 +151,10 @@ section{
     /* background: red; */
     height: 20vh;
     padding: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
-.about__info > h2{
+.about__info > h3{
     text-align: center;
     font-weight: 600;
     font-size: 1.6rem;
@@ -177,11 +178,21 @@ section{
 }
 
 
+
 .about__skills{
     flex-wrap: wrap;
     /* border: 2px solid red; */
     text-align: center;
     padding: 10px;
+}
+
+.about__skills > div{
+    display: inline-block;
+}
+
+.about__skills > div > p{
+    font-weight: normal;
+    font-size: 18px;
 }
 
 
@@ -280,13 +291,60 @@ section{
     color: white;
 }
 
+
+/* BLOCKQUOTE */
+
+.blockquote{
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 25px;
+    /* background: #f8fffe; */
+    border: 1px solid lightblue;
+    color: grey;
+}
+
+.blockquote::before{
+    content: "\201c";
+    font-size: 50px;
+    color: lightblue;
+}
+
+.blockquote__text{
+    /* gelacio */
+    font-family: cursive;
+    font-size: 1.15em;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.blockquote__text:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+.blockquote__bordered{
+    border-left-width: 10px;
+}
+
+.blockquote__author{
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+}
+
+.blockquote__author::before{
+    content: "\2014\0020"
+}
+
+.blockquote__author__child{
+    font-weight: lighter;
+    text-align: right;
+}
+
 /* Contact me */
 .contact{
-    display: grid;
-    place-items: center;
-    place-content: center;
-    background: white;
+    background: rgb(40, 75, 112);
     padding: 0 20px;
+    color: #fff;
 }
 
 .contact > h3 {
