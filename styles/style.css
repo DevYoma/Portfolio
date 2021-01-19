@@ -175,10 +175,19 @@ section{
     margin: 0 auto;
 }
 
-.about__techstack__svg > h2 {
-    font-size: 600;
+.about__tech{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: red; */
+    height: 10vh;
+    margin: 0 auto;
+    text-align: center;
 }
 
+.about__tech > p{
+    font-size: 18px;
+}
 
 
 .about__skills{
@@ -229,6 +238,7 @@ section{
     background: rgb(40, 75, 112);
     padding: 20px 0;
     overflow: hidden;
+    margin-top: 10vh;
 }
 
 .projects > h1 {
